@@ -8,6 +8,8 @@ debug-buildpack,https://repo.spring.io/libs-snapshot-local/org/cloudfoundry/debu
 jmx-buildpack,https://repo.spring.io/libs-snapshot-local/org/cloudfoundry/jmx/org.cloudfoundry.jmx/${VERSION}/org.cloudfoundry.jmx-${VERSION}.tgz \
 jvm-application-buildpack,https://repo.spring.io/libs-snapshot-local/org/cloudfoundry/jvmapplication/org.cloudfoundry.jvmapplication/${VERSION}/org.cloudfoundry.jvmapplication-${VERSION}.tgz \
 openjdk-buildpack,https://repo.spring.io/libs-snapshot-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/${VERSION}/org.cloudfoundry.openjdk-${VERSION}.tgz \
+azure-application-insights-buildpack,https://repo.spring.io/libs-snapshot-local/org/cloudfoundry/azureapplicationinsights/org.cloudfoundry.azureapplicationinsights/${VERSION}/org.cloudfoundry.azureapplicationinsights-${VERSION}.tgz \
+google-stackdriver-buildpack,https://repo.spring.io/libs-snapshot-local/org/cloudfoundry/googlestackdriver/org.cloudfoundry.googlestackdriver/${VERSION}/org.cloudfoundry.googlestackdriver-${VERSION}.tgz \
 "
 
 cp java-buildpack-group/builder.toml ./

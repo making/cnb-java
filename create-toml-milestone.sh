@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.0.0-M5
+VERSION=1.0.0-M9
 
 buildpacks="\
 build-system-buildpack,https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/${VERSION}/org.cloudfoundry.buildsystem-${VERSION}.tgz \

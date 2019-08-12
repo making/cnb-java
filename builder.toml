@@ -1,0 +1,24 @@
+buildpacks = [
+  { id = "org.cloudfoundry.archiveexpanding",          uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/archiveexpanding/org.cloudfoundry.archiveexpanding/1.0.0-M9/org.cloudfoundry.archiveexpanding-1.0.0-M9.tgz",           latest = true },
+  { id = "org.cloudfoundry.buildsystem",               uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M9/org.cloudfoundry.buildsystem-1.0.0-M9.tgz",                          latest = true },
+  { id = "org.cloudfoundry.jvmapplication",            uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/jvmapplication/org.cloudfoundry.jvmapplication/1.0.0-M9/org.cloudfoundry.jvmapplication-1.0.0-M9.tgz",                 latest = true },
+  { id = "org.cloudfoundry.openjdk",                   uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M9/org.cloudfoundry.openjdk-1.0.0-M9.tgz",                                      latest = true },
+  { id = "org.cloudfoundry.springboot",                uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/springboot/org.cloudfoundry.springboot/1.0.0-M9/org.cloudfoundry.springboot-1.0.0-M9.tgz",                             latest = true },
+  { id = "org.cloudfoundry.distzip",                   uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/distzip/org.cloudfoundry.distzip/1.0.0-M9/org.cloudfoundry.distzip-1.0.0-M9.tgz",                                      latest = true },
+]
+
+[[groups]]
+labels = [ "java" ]
+buildpacks = [
+  { id = "org.cloudfoundry.archiveexpanding",          version = "1.0.0-M9", optional = true },
+  { id = "org.cloudfoundry.openjdk",                   version = "1.0.0-M9" },
+  { id = "org.cloudfoundry.buildsystem",               version = "1.0.0-M9", optional = true },
+  { id = "org.cloudfoundry.jvmapplication",            version = "1.0.0-M9" },
+  { id = "org.cloudfoundry.springboot",                version = "1.0.0-M9", optional = true },
+  { id = "org.cloudfoundry.distzip",                   version = "1.0.0-M9", optional = true },
+]
+
+[stack]
+id = "io.buildpacks.stacks.bionic"
+build-image = "cloudfoundry/cnb:bionic"
+run-image   = "cloudfoundry/run:base-cnb"

@@ -1,3 +1,0 @@
-[submodule "java-buildpack-group"]
-	path = java-buildpack-group
-	url = https://github.com/cloudfoundry/java-buildpack-group
